@@ -92,10 +92,10 @@ source .venv/bin/activate        # Mac/Linux
 .venv\Scripts\activate           # Windows
 ```
 
-### 3. Install Dependencies
+### 3. Train Model
 
 ```bash
-pip install -r requirements.txt
+model/train.py
 ```
 
 ### 4. Add Your Trained Model
