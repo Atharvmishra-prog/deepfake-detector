@@ -104,7 +104,7 @@ Place your trained model file in the `model/` folder:
 
 ```bash
 mkdir -p model
-cp /path/to/deepfake_fixed_v2.keras model/
+cp /path/to/deepfake_detection.keras model/
 ```
 
 ### 5. Run the App
