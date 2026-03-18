@@ -1,6 +1,6 @@
 # 🎭 DeepFake Image Detector
 
-A deep learning web application that detects whether an image has been manipulated using deepfake technology. Built with **Xception (TensorFlow/Keras)** for the model and **Flask** for the backend, with a clean dark-themed frontend.
+A deep learning web application that detects whether an image has been manipulated using deepfake technology. Built with **Xception (TensorFlow/Keras)** for the model and **Flask** for the backend, with a clean frontend.
 
 ---
 
@@ -20,7 +20,6 @@ A deep learning web application that detects whether an image has been manipulat
 - ✅ Recent analysis history panel
 - ✅ Works on mobile via local network (same WiFi)
 - ✅ Auto-opens browser on startup
-- ✅ Demo mode if model not loaded
 
 ---
 
@@ -52,16 +51,13 @@ Dense(1, sigmoid)
 Deepfake Media Detection/
 │
 ├── app.py                          ← Flask backend (API + serving)
-├── requirements.txt                ← Python dependencies
 ├── README.md                       ← You are here
 │
-├── static/
+├── Frontend/
 │   └── index.html                  ← Frontend (HTML/CSS/JS)
 │
 ├── model/
-│   ├── deepfake_fixed_v2.keras     ← Trained model (place here)
-│   ├── deepfake_detection.py       ← Training script
-│   ├── load_model_fix.py           ← Model fix script
+│   ├── deepfake_detection.keras     ← Trained model (place here)
 │   └── Data/
 │       └── train/
 │           ├── Class_0/            ← Real images
@@ -131,30 +127,17 @@ http://192.168.x.x:5000
 
 Use the IP shown in your terminal. Always use **http://** not https://.
 
----
-
-## 🌐 Public Access via ngrok (Optional)
-
-```bash
-brew install ngrok
-ngrok config add-authtoken YOUR_TOKEN
-ngrok http 5000
-```
-
-Share the generated URL with anyone, anywhere.
-
----
 
 ## 🔧 Configuration
 
 | Variable | Default | Description |
 |---|---|---|
-| `MODEL_PATH` | `model/deepfake_fixed_v2.keras` | Path to your `.keras` model |
+| `MODEL_PATH` | `model/deepfake_detection.keras` | Path to your `.keras` model |
 | `IMG_SIZE` | `299` | Input image size |
 | `THRESHOLD` | `0.70` | Fake detection threshold (0–1) |
 
 ```bash
-THRESHOLD=0.80 python app.py
+THRESHOLD=0.50 python app.py
 ```
 
 ---
@@ -194,15 +177,6 @@ THRESHOLD=0.80 python app.py
 
 ---
 
-## 🏋️ Retraining the Model
-
-### Add More Data
-
-```
-model/Data/train/
-├── Class_0/    ← Real images only
-└── Class_1/    ← Fake + Deepfake + AI-generated images
-```
 
 ### Recommended Datasets
 
@@ -218,15 +192,6 @@ model/Data/train/
 python model/deepfake_detection.py
 ```
 
-### Fix & Deploy New Model
-
-```bash
-python model/load_model_fix.py
-sed -i '' "s|deepfake_fixed_v2.keras|deepfake_fixed_v3.keras|" app.py
-python app.py
-```
-
----
 
 ## 📦 Requirements
 
