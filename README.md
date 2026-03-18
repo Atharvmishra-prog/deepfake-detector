@@ -134,7 +134,7 @@ Use the IP shown in your terminal. Always use **http://** not https://.
 |---|---|---|
 | `MODEL_PATH` | `model/deepfake_detection.keras` | Path to your `.keras` model |
 | `IMG_SIZE` | `299` | Input image size |
-| `THRESHOLD` | `0.70` | Fake detection threshold (0–1) |
+| `THRESHOLD` | `0.50` | Fake detection threshold (0–1) |
 
 ```bash
 THRESHOLD=0.50 python app.py
