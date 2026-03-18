@@ -171,7 +171,7 @@ THRESHOLD=0.50 python app.py
   "status": "ok",
   "model_loaded": true,
   "img_size": 299,
-  "threshold": 0.7
+  "threshold": 0.5
 }
 ```
 
@@ -220,7 +220,7 @@ numpy>=1.24
 
 - Best at detecting **face swap deepfakes**
 - May miss some AI-generated images (Midjourney, DALL-E) — add CIFAKE data and retrain to fix
-- Camera photos may score slightly high — threshold set to 0.70 to compensate
+- Camera photos may score slightly high
 - Not for forensic or legal use without further validation
 
 ---
@@ -244,7 +244,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 ## 👨‍💻 Author
 
 **Atharv Mishra**
-- GitHub: [@atharvmishra](https://github.com/atharvmishra)
+- GitHub: [@atharvmishra](https://github.com/Atharvmishra-prog)
 
 ---
 
