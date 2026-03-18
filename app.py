@@ -10,11 +10,11 @@ import base64
 import webbrowser
 import threading
 
-app = Flask(__name__, static_folder='static')
+app = Flask(__name__, static_folder='Frontend')
 CORS(app)
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
-MODEL_PATH = os.environ.get('MODEL_PATH', 'model/deepfake_fixed_v2.keras')
+MODEL_PATH = os.environ.get('MODEL_PATH', 'model/deepfake_detection.keras')
 IMG_SIZE   = int(os.environ.get('IMG_SIZE', 299))
 THRESHOLD  = float(os.environ.get('THRESHOLD', 0.50))
 # ──────────────────────────────────────────────────────────────────────────────
@@ -72,7 +72,7 @@ def predict(image_bytes: bytes) -> dict:
 
 @app.route('/')
 def index():
-    return send_from_directory('static', 'index.html')
+    return send_from_directory('Frontend', 'index.html')
 
 
 @app.route('/api/detect', methods=['POST'])
