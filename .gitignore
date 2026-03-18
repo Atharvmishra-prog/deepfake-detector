@@ -1,0 +1,9 @@
+.venv
+model/Data
+model/Test
+model/*.keras 
+.png
+.jpeg
+.jpg
+.DS_Store
+EOF
