@@ -68,7 +68,7 @@ Deepfake Media Detection/
 │       │   └── Class_1/            ← Fake images
 │       │
 │       └── test/                  
-│           ├── Sample Images       ← (Real/Fake)  
+│           └── Sample Images       ← (Real/Fake)  
 └── assets/
     └── demo.png                    ← Screenshot for README
 
@@ -251,7 +251,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 ## 👨‍💻 Author
 
 **Atharv Mishra**
-- GitHub: [@atharvmishra](https://github.com/Atharvmishra-prog)
+- GitHub: [@Atharvmishra-prog](https://github.com/Atharvmishra-prog)
 
 ---
 
