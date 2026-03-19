@@ -1,4 +1,4 @@
-.venv
+
 model/Data
 model/Test
 model/*.keras 
