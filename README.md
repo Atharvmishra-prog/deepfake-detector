@@ -68,9 +68,7 @@ Deepfake Media Detection/
 │       │   └── Class_1/            ← Fake images
 │       │
 │       └── test/                  
-│           ├── Class_0/
-│           └── Class_1/
-│
+│           ├── Sample Images       ← (Real/Fake)  
 └── assets/
     └── demo.png                    ← Screenshot for README
 
