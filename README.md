@@ -48,23 +48,32 @@ Dense(1, sigmoid)
 ## 📁 Project Structure
 
 ```
+
 Deepfake Media Detection/
 │
 ├── app.py                          ← Flask backend (API + serving)
-├── README.md                       ← You are here
+├── README.md                       ← Project documentation
 │
 ├── Frontend/
 │   └── index.html                  ← Frontend (HTML/CSS/JS)
 │
 ├── model/
-│   ├── deepfake_detection.keras     ← Trained model (place here)
+│   ├── train.py                    ← Script to train the model
+│   ├── test.py                     ← Script to test/evaluate model
+│   ├── deepfake_detection.keras    ← Saved trained model
+│   │
 │   └── Data/
-│       └── train/
-│           ├── Class_0/            ← Real images
-│           └── Class_1/            ← Fake/Deepfake images
+│       ├── train/
+│       │   ├── Class_0/            ← Real images
+│       │   └── Class_1/            ← Fake images
+│       │
+│       └── test/                   ← (Optional but recommended)
+│           ├── Class_0/
+│           └── Class_1/
 │
 └── assets/
     └── demo.png                    ← Screenshot for README
+
 ```
 
 ---
