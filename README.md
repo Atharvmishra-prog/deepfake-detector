@@ -67,7 +67,7 @@ Deepfake Media Detection/
 │       │   ├── Class_0/            ← Real images
 │       │   └── Class_1/            ← Fake images
 │       │
-│       └── test/                   ← (Optional but recommended)
+│       └── test/                  
 │           ├── Class_0/
 │           └── Class_1/
 │
