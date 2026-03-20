@@ -259,4 +259,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 - [Xception Paper](https://arxiv.org/abs/1610.02357) — François Chollet
 - [FaceForensics++](https://github.com/ondyari/FaceForensics) — Andreas Rössler et al.
-- [CIFAKE Dataset](https://www.kaggle.com/datasets/birdy654/cifake-real-and-ai-generated-synthetic-images) — Jordan J. Bird
+- [Kaggle Dataset](https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images)
