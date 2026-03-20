@@ -226,7 +226,7 @@ numpy>=1.24
 ## ⚠️ Limitations
 
 - Best at detecting **face swap deepfakes**
-- May miss some AI-generated images (Midjourney, DALL-E) — add CIFAKE data and retrain to fix
+- May miss some AI-generated images (Midjourney, DALL-E)
 - Camera photos may score slightly high
 - Not for forensic or legal use without further validation
 
@@ -258,5 +258,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 ## 🙏 Acknowledgements
 
 - [Xception Paper](https://arxiv.org/abs/1610.02357) — François Chollet
-- [FaceForensics++](https://github.com/ondyari/FaceForensics) — Andreas Rössler et al.
-- [Kaggle Dataset](https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images)
+- [Dataset](https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images) -Kaggle
