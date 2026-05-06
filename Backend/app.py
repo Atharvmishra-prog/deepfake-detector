@@ -19,7 +19,7 @@ CORS(app)
 MODEL_PATH = os.environ.get('MODEL_PATH', 'model/deepfake_fixed_final.keras')
 IMG_SIZE   = int(os.environ.get('IMG_SIZE',   299))
 THRESHOLD  = float(os.environ.get('THRESHOLD', 0.45))
-VIDEO_THRESHOLD = float(os.environ.get('VIDEO_THRESHOLD', 0.75))
+VIDEO_THRESHOLD = float(os.environ.get('VIDEO_THRESHOLD', 0.65))
 FRAME_STEP = int(os.environ.get('FRAME_STEP', 5))   # analyse every Nth frame
 MAX_FRAMES = int(os.environ.get('MAX_FRAMES', 60))    # max frames to analyse
 TOP_FRAMES = int(os.environ.get('TOP_FRAMES', 6))     # most suspicious frames to return
