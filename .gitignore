@@ -2,7 +2,7 @@
 Backend/__pycache__
 model/Data
 model/Test
-model/*.keras 
+model/*.keras
 .png
 .jpeg
 .jpg
