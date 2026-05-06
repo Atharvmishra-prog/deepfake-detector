@@ -1,5 +1,5 @@
 .venv
-Backend/__pycache__
+Backend/__pycache_
 model/Data
 model/Test
 model/*.keras 
