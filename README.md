@@ -1,12 +1,12 @@
 # 🎭 DeepFake Image Detector
 
-A deep learning web application that detects whether an image has been manipulated using deepfake technology. Built with **Xception (TensorFlow/Keras)** for the model and **Flask** for the backend, with a clean frontend.
+A deep learning web application that detects whether an image/video has been manipulated using deepfake technology. Built with **Xception (TensorFlow/Keras)** for the model and **Flask** for the backend, with a clean frontend.
 
 ---
 
 ## 📸 Demo
 
-> Upload any image → Get instant Real/Fake verdict with confidence score
+> Upload any image/video → Get instant Real/Fake verdict with confidence score
 
 ![Demo Screenshot](assets/demo.png)
 
@@ -15,7 +15,7 @@ A deep learning web application that detects whether an image has been manipulat
 ## 🚀 Features
 
 - ✅ Detects face swaps and deepfake manipulations
-- ✅ Drag & drop or click to upload images
+- ✅ Drag & drop or click to upload images/videos
 - ✅ Real-time confidence score with animated probability bars
 - ✅ Recent analysis history panel
 - ✅ Works on mobile via local network (same WiFi)
@@ -51,11 +51,17 @@ Dense(1, sigmoid)
 
 Deepfake Media Detection/
 │
-├── app.py                          ← Flask backend (API + serving)
+├── run.py                          ← Flask backend (API + serving)
 ├── README.md                       ← Project documentation
 │
+├── Backend/
+│   └── app.py                        ← app.py
+│   └── routes_image                  ← Route for images
+│   └── routes_videos                 ← Route for videos
 ├── Frontend/
-│   └── index.html                  ← Frontend (HTML/CSS/JS)
+│   └── index.html                  ← Frontend (HTML)
+│   └── script.js                   ← Frontend (Javascipt)
+│   └── style.css                   ← Frontend (CSS)
 │
 ├── model/
 │   ├── train.py                    ← Script to train the model
